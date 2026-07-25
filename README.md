@@ -204,7 +204,7 @@ Loader.newTextNode(msg) => { /* ... */ }
 
 Returns a `textNode` object with the passed arguments accessible.
 
--- **Required**
+- **Required**
     - {string} text: textContent string
 
 ## Where to now?
