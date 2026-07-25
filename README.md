@@ -69,8 +69,8 @@ document.body.appendChild(wrapperDiv)
 ```js
 import Loader from "elLoader.js"
 
-const elements = Loader.createElements(
-    Loader.newEl("h1", { text: "Welcome to my fun facts!" }),
+const elements = Loader.loadElements(
+    Loader.newEl("h1", { text: "Fun Facts!" }),
     Loader.newEl("div", { 
         classList: "container",
         id: "wrapper",
@@ -110,13 +110,13 @@ const divOne = Loader.newEl("div", {
     classList: "container",
     id: "childOne",
     children: [ Loader.newEl("p", { text: "at this very moment i am hungry" }) ]
-}),
+})
 
 const divTwo = Loader.newEl("div", {
     classList: "container",
     id: "childTwo",
     children: [ Loader.newEl("p", { text: "a lot of people die from mosquito bites" }) ]
-}),
+})
 
 const divThree Loader.newEl("div", {
     classList: "container",
@@ -124,8 +124,8 @@ const divThree Loader.newEl("div", {
     children: [ Loader.newEl("p", { text: "i hate ants" }) ]
 })
 
-const elements = Loader.createElements(
-    Loader.newEl("h1", { text: "Welcome to my fun facts!" }),
+const elements = Loader.loadElements(
+    Loader.newEl("h1", { text: "Fun Facts!" }),
     Loader.newEl("div", { 
         classList: "container",
         id: "wrapper",
