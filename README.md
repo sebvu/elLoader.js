@@ -10,7 +10,7 @@ import Loader from "elLoader.js"
 Loader.loadElements()
 ```
 
-### Why?
+## Why?
 
 Dynamically adding elements with raw JS can suck. This is a **one-usage no-bloat** solution.
 
@@ -151,11 +151,9 @@ For more extreme cases, this could save you up to hundreds of lines like it did 
 
 And more importantly, **this is the only functionality!** There is absolutely no bloat. Only tradeoff is cleaner code.. :)
 
-### Usage
+## Usage
 
-There are only *two* other methods used in conjunction with `.loadElements()`
-
-##### loadElements()
+### loadElements()
 
 ```js
 Loader.loadElements(...elList) => { /* ... */ }
@@ -166,7 +164,7 @@ Returns a `Array` object containing all the specified dom elements.
 - **Required**
     - {el|el[]|textNode}: A root, or a list of specified obj with specified options defined as per specifications of each object.
 
-##### newEl()
+### newEl()
 
 ```js
 Loader.newEl(
@@ -198,7 +196,7 @@ Returns a `el` object with the passed arguments accessible.
 > [!NOTE]
 > `isNS` only uses the namespaceURI for **SVGs** at this moment. There is also no support for `inline` styles at this point.
 
-##### newTextNode()
+### newTextNode()
 
 ```js
 Loader.newTextNode(msg) => { /* ... */ }
@@ -209,6 +207,8 @@ Returns a `textNode` object with the passed arguments accessible.
 -- **Required**
     - {string} text: textContent string
 
-### Where to now?
+## Where to now?
 
 This project for the most part is unserious. I may post it to `npm` sometime though. I want to extend its capabilities as well, but it'll really only come to me when I *need* it since I do use this for my webpack applications.
+
+Depending on how I feel, I'll touch up on it more. :)
