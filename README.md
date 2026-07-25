@@ -1,13 +1,13 @@
-# elLoader
+# elLoader.js
 
-The most basic implementation for inserting your elements dynamically.
+The most BASIC implementation for dynamically adding elements more cleanly, and with less lines...
 
 One call to rule them all.
 
 ```javascript
 import Loader from "elLoader.js"
 
-Loader.loadElements(Loader.newEl("p", { text: "Hello World!" }))
+Loader.loadElements()
 ```
 
 ### Why?
@@ -155,6 +155,17 @@ And more importantly, **this is the only functionality!** There is absolutely no
 
 There are only *two* other methods used in conjunction with `.loadElements()`
 
+##### loadElements()
+
+```js
+Loader.loadElements(...elList) => { /* ... */ }
+```
+
+Returns a `Array` object containing all the specified dom elements.
+
+- **Required**
+    - {el|el[]|textNode}: A root, or a list of specified obj with specified options defined as per specifications of each object.
+
 ##### newEl()
 
 ```js
@@ -171,6 +182,8 @@ Loader.newEl(
     
 ) => { /* ... */ }
 ```
+
+Returns a `el` object with the passed arguments accessible.
 
 - **Required**
     - {string} elementType: A valid HTML element type
@@ -190,6 +203,8 @@ Loader.newEl(
 ```js
 Loader.newTextNode(msg) => { /* ... */ }
 ```
+
+Returns a `textNode` object with the passed arguments accessible.
 
 -- **Required**
     - {string} text: textContent string
