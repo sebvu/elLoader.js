@@ -1,5 +1,5 @@
 /* 
-	MIT LICENSE, FREE USE & DISTRIBUTION
+	MIT LICENSE FREE USE & DISTRIBUTION
 
 	Copyright (c) 2026 Jester Santos
 */
